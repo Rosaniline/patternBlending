@@ -26,7 +26,7 @@ public:
     
     Mat inpainting (const Mat& src_img, const Mat& mask);
     
-    Mat reconstruct (const Mat& src_one, const Mat& src_two, const Mat& dst_img, const Mat& weight, const Mat& mask);
+    Mat reconstruct (const Mat& src_one, const Mat& src_two, const Mat& dst_img, const Mat& weight, const Mat& mask, const Mat& slice_mask, const Point& centroid);
     
 private:
 
@@ -55,7 +55,8 @@ private:
 
     const static int    PATCHWIDTH         = 7;
     const static int    PYRAMID_LEVEL      = 2;
-    const static int    MAX_ITERATION      = 30;
+    const static int    MIN_ITERATION      = 20;
+    const static int    INTER_DECREASE     = 10;
     
 };
 

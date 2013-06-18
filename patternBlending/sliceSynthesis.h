@@ -40,7 +40,7 @@ private:
     
     Mat hybrid (const tattingPattern& src, const Mat& similar, double layer_ratio, double layer_sigma, double slice_sigma);
     
-    Mat sliceHybrid (const tattingPattern& src, const Mat& similar, double layer_ratio, double layer_sigma, double slice_sigma);
+    Mat sliceHybrid (const tattingPattern& src, const Mat& similar, int similar_max_radius, double layer_ratio, double layer_sigma, double slice_sigma);
     
     void randomResizing (Mat& src, const Point& centroid, double ratio);
     

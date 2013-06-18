@@ -29,9 +29,9 @@ Mat sliceSynthesis::synthesis(const tattingPattern &tatting) {
         
 //        resize_ratio = 1.0;//rng.uniform(0.3, 1.0);
 //        rotate_angle = 18;//rng.uniform(0.0, 360.0/tatting.slice_num);
-//        layer_ratio = 0.8;//rng.uniform(0.3, 1.0);
+//        layer_ratio = 1.0;//rng.uniform(0.3, 1.0);
 //        layer_sigma = 50;//rng.uniform(20, 60);
-//        slice_sigma = 30;//rng.uniform(20, 70);
+//        slice_sigma = 50;//rng.uniform(20, 70);
         
         resize_ratio = rng.uniform(0.5, 1.0);
         rotate_angle = rng.uniform(-1, 1)*360/tatting.slice_num;
@@ -43,7 +43,7 @@ Mat sliceSynthesis::synthesis(const tattingPattern &tatting) {
         
 //        Mat syn = hybrid(tatting, similar, layer_ratio, layer_sigma, slice_sigma);
         
-        Mat syn = sliceHybrid(tatting, similar, layer_ratio, layer_sigma, slice_sigma);
+        Mat syn = sliceHybrid(tatting, similar, tatting.max_radius*resize_ratio, layer_ratio, layer_sigma, slice_sigma);
         
         stringstream file;
         file << "/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/exp/rsz_"<<resize_ratio<<"_rot_"<<rotate_angle<<"_lyr_"<<layer_ratio<<"_lsg_"<<layer_sigma<<"_ssg_"<<slice_sigma<<".bmp";
@@ -176,8 +176,8 @@ Mat sliceSynthesis::alphaBlending (const Mat& src, const Point& centroid, int ma
     Mat blended = Mat::zeros(src.size(), src.type());
     Mat temp = Mat::zeros(src.size(), src.type());
     
-    multiply(src, weight, blended);
-    multiply(dst, 1 - weight, temp);
+    multiply(src, 1.0 - weight, blended);
+    multiply(dst, weight, temp);
     
     blended += temp;
     
@@ -309,26 +309,36 @@ Mat sliceSynthesis::hybrid(const tattingPattern &src, const cv::Mat &similar, do
 }
 
 
-Mat sliceSynthesis::sliceHybrid(const tattingPattern &src, const cv::Mat &similar, double layer_ratio, double layer_sigma, double slice_sigma) {
-    
-//    Mat weight = sliceGaussianRG(src.slice_num, slice_sigma, src.centroid, src.pattern.size(), src.max_radius, src.sym_angle);
+Mat sliceSynthesis::sliceHybrid(const tattingPattern &src, const cv::Mat &similar, int similar_max_radius, double layer_ratio, double layer_sigma, double slice_sigma) {
     
     Mat weight = circularGaussianRG(layer_ratio, layer_sigma, src.centroid, src.pattern.size(), src.max_radius);
+    
+    Mat weight_p = sliceGaussianRG(src.slice_num, slice_sigma, src.centroid, src.pattern.size(), src.max_radius, src.sym_angle);
 
-//    for (int i = 0; i < weight.rows; i ++) {
-//        for (int j = 0; j < weight.cols; j ++) {
-//
-//            weight.at<double>(i, j) = MIN(weight.at<double>(i, j) + weight_p.at<double>(i, j), 1.0);
-//        }
-//    }
+    for (int i = 0; i < weight.rows; i ++) {
+        for (int j = 0; j < weight.cols; j ++) {
+            
+            if ( sqrt(pow(i - src.centroid.y, 2.0) + pow(j - src.centroid.x, 2.0)) < src.max_radius*layer_ratio ) {
+                weight.at<double>(i, j) = MIN(weight.at<double>(i, j) + weight_p.at<double>(i, j), 1.0);
+            }
+            
+        }
+    }
+    
+//    cout<<src.max_radius<<", "<<similar_max_radius<<endl;
+    
+//    showMat(weight);
     
 
     Mat blended = alphaBlending(src.pattern, src.centroid, src.max_radius, similar, weight);
     Mat blended_aug = blended.clone();
     
+//    showMat(blended);    
+    
     multiply(blended, src.slices_mask[4], blended);
     multiply(blended_aug, src.blend_mask[4], blended_aug);
     
+        
     Rect roi_range = minContainingRect(src.slices_mask[4]);
     Rect aug_range = minContainingRect(src.blend_mask[4]);
     
@@ -337,13 +347,18 @@ Mat sliceSynthesis::sliceHybrid(const tattingPattern &src, const cv::Mat &simila
     Mat aug_roi = blended_aug.operator()(aug_range);
     
     
+//    showMat(blend_roi);
     
     BidirectSimilarity bi_Sim = BidirectSimilarity();
     
-    bi_Sim.reconstruct(src.pattern.operator()(roi_range), similar.operator()(roi_range), blend_roi, weight.operator()(roi_range), src.slices_mask[4].operator()(roi_range)).copyTo(blend_roi);
+//    bi_Sim.reconstruct(src.pattern.operator()(aug_range), similar.operator()(aug_range), aug_roi, weight.operator()(aug_range), src.blend_mask[4].operator()(aug_range)).copyTo(aug_roi);
     
-
-    return reconstSlice(src, blended);
+    bi_Sim.reconstruct(src.pattern.operator()(aug_range), similar.operator()(aug_range), aug_roi, weight.operator()(aug_range), src.blend_mask[4].operator()(aug_range), src.slices_mask[4].operator()(aug_range), Point(src.centroid.x - aug_range.x, src.centroid.y - aug_range.y)).copyTo(aug_roi);
+    
+    
+    multiply(blended_aug, src.slices_mask[4], blended_aug);
+    
+    return reconstSlice(src, blended_aug);
     
 }
 

@@ -59,7 +59,7 @@ private:
     static const int ROT_MIN_PYRAMID_LEVEL  = 3;
     static const int ROT_MIN_SEARCH_WIDTH   = 1;
     static const int INNER_MOST_RADIUS      = 20;
-    static const int BLEND_OFFSET           = 5;
+    static const int BLEND_OFFSET           = 10;
     
     
 };

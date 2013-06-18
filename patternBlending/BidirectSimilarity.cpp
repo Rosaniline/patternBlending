@@ -11,7 +11,7 @@
 BidirectSimilarity::BidirectSimilarity() {}
 
 
-Mat BidirectSimilarity::reconstruct(const cv::Mat &src_one, const cv::Mat &src_two, const cv::Mat &dst_img, const cv::Mat &weight, const cv::Mat &mask) {
+Mat BidirectSimilarity::reconstruct (const Mat& src_one, const Mat& src_two, const Mat& dst_img, const Mat& weight, const Mat& mask, const Mat& slice_mask, const Point& centroid) {
     
 //    showMat(src_one, "s", 1);
 //    showMat(src_two, "s2", 1);
@@ -24,6 +24,7 @@ Mat BidirectSimilarity::reconstruct(const cv::Mat &src_one, const cv::Mat &src_t
     vector<Mat> src_one_pyr = constructPyramid(src_one, PYRAMID_LEVEL);
     vector<Mat> src_two_pyr = constructPyramid(src_two, PYRAMID_LEVEL);
     vector<Mat> mask_pyr = constructPyramid(mask, PYRAMID_LEVEL);
+    vector<Mat> slice_mask_pyr = constructPyramid(slice_mask, PYRAMID_LEVEL);
     vector<Mat> weight_pyr = constructPyramid(weight, PYRAMID_LEVEL);
     
     
@@ -47,7 +48,38 @@ Mat BidirectSimilarity::reconstruct(const cv::Mat &src_one, const cv::Mat &src_t
         
         cout<<"iteration = ";
         
-        for (int s = 0; s < MAX_ITERATION - scale*10; s ++) {
+        Mat temp_mask = (mask_pyr[scale] + slice_mask_pyr[scale])*0.5;
+        Mat temp_c, temp_cc;
+        
+        Point temp_centroid = Point(centroid.x*pow(0.5, PYRAMID_LEVEL - scale), centroid.y*pow(0.5, PYRAMID_LEVEL - scale));
+        
+        Mat rot_mat_c = getRotationMatrix2D(temp_centroid, 36 + 10, 1.0);
+        Mat rot_mat_cc = getRotationMatrix2D(temp_centroid, -36 - 10, 1.0);
+
+        
+        
+
+        
+        for (int s = 0; s < MIN_ITERATION + (PYRAMID_LEVEL - scale)*INTER_DECREASE; s ++) {
+            
+            multiply(blend, temp_mask, blend);
+            
+//            showMat(blend, "b", 1);
+            
+            warpAffine(blend, temp_c, rot_mat_c, temp_c.size(), INTER_CUBIC);
+            multiply(temp_c, mask_pyr[scale], temp_c);
+            
+//            showMat(temp_c, "c", 1);
+            
+            warpAffine(blend, temp_cc, rot_mat_cc, temp_cc.size(), INTER_CUBIC);
+            multiply(temp_cc, mask_pyr[scale], temp_cc);
+            
+//            showMat(temp_cc, "cc", 1);
+            
+            blend = blend + temp_c + temp_cc;
+            
+//            showMat(blend, "f", 0);
+            
             
             Mat blend_one = blend.clone(), blend_two = blend.clone();
             
@@ -67,8 +99,8 @@ Mat BidirectSimilarity::reconstruct(const cv::Mat &src_one, const cv::Mat &src_t
 //            showMat(blend_one, "11", 1);
 //            showMat(blend_two, "22", 0);
             
-            multiply(blend_one, weight_pyr[scale], blend_one);
-            multiply(blend_two, 1.0 - weight_pyr[scale], blend_two);
+            multiply(blend_one, 1.0 - weight_pyr[scale], blend_one);
+            multiply(blend_two, weight_pyr[scale], blend_two);
 
             blend = blend_one + blend_two;
             
@@ -95,6 +127,7 @@ Mat BidirectSimilarity::reconstruct(const cv::Mat &src_one, const cv::Mat &src_t
     vector<Mat>().swap(src_one_pyr);
     vector<Mat>().swap(src_two_pyr);
     vector<Mat>().swap(mask_pyr);
+    vector<Mat>().swap(slice_mask_pyr);
     vector<Mat>().swap(weight_pyr);
     
     
