@@ -7,12 +7,19 @@
 //
 
 #include <iostream>
+#include "tattingPattern.h"
+#include "sliceSynthesis.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Mat img = imread("/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/tl6.jpg");
+    
+    tattingPattern pattern = tattingPattern(img);
+    
+    sliceSynthesis synthesizer = sliceSynthesis();
+    synthesizer.synthesis(pattern);
+    
     return 0;
 }
 

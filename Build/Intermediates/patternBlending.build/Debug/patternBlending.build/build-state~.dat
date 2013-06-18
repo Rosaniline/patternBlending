@@ -1,0 +1,802 @@
+TpatternBlending
+v5
+r1
+cCheck dependencies
+cCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/main.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniTools.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniPatchTools.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosMat.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDraw.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDataStructure.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDisplay.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+cLd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/patternBlending normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c0000000051BDD35C00000000000000AA
+t1371394908
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/Availability.h
+c00000000507BD78F0000000000001B50
+t1350293391
+s6992
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/assert.h
+c00000000507BD78F0000000000000F6E
+t1350293391
+s3950
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/errno.h
+c00000000507BD79000000000000003EB
+t1350293392
+s1003
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/math.h
+c00000000507BD79000000000000066C2
+t1350293392
+s26306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdint.h
+c00000000507BD79100000000000018EF
+t1350293393
+s6383
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdlib.h
+c00000000507BD7910000000000003089
+t1350293393
+s12425
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/string.h
+c00000000507BD7910000000000001A3A
+t1350293393
+s6714
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/time.h
+c00000000507BD791000000000000178E
+t1350293393
+s6030
+
+N/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/emmintrin.h
+c00000000507BD793000000000000EAA5
+t1350293395
+s60069
+i<xmmintrin.h>
+
+N/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/float.h
+c00000000507BD7930000000000001538
+t1350293395
+s5432
+
+N/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/limits.h
+c00000000507BD7930000000000000D03
+t1350293395
+s3331
+i"syslimits.h"
+
+N/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/mm_malloc.h
+c00000000507BD793000000000000093D
+t1350293395
+s2365
+i<stdlib.h>
+i<errno.h>
+
+N/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/mmintrin.h
+c00000000507BD79300000000000092B1
+t1350293395
+s37553
+
+N/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/syslimits.h
+c00000000507BD7930000000000000155
+t1350293395
+s341
+
+N/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include/xmmintrin.h
+c00000000507BD793000000000000BECA
+t1350293395
+s48842
+i<mmintrin.h>
+i<mm_malloc.h>
+i<emmintrin.h>
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp
+c0000000051AC32E40000000000000EAC
+t1370239716
+s3756
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp
+c00000000518CA2D600000000000000B7
+t1368171222
+s183
+i"RosaniDataStructure.h"
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp
+c00000000518CA1BD00000000000001EC
+t1368170941
+s492
+i"RosaniDisplay.h"
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp
+c00000000519B13630000000000001BA6
+t1369117539
+s7078
+i<iostream>
+i"RosaniDraw.h"
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp
+c0000000051B68DB200000000000037B6
+t1370918322
+s14262
+i"RosaniPatchTools.h"
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp
+c0000000051AF4C8A00000000000024D2
+t1370442890
+s9426
+i<iostream>
+i"RosaniTools.h"
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosMat.o
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDataStructure.o
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDisplay.o
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDraw.o
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniPatchTools.o
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniTools.o
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/patternBlending.LinkFileList
+c0000000051BE96120000000000000462
+t1371444754
+s1122
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/patternBlending
+t2
+s0
+
+N/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp
+c0000000051BE9556000000000000011C
+t1371444566
+s284
+i<iostream>
+
+N/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniDataStructure.h
+c00000000518F88E70000000000001A6E
+t1368361191
+s6766
+i<iostream>
+i<opencv2/opencv.hpp>
+
+N/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniDisplay.h
+c00000000518CA2A100000000000001DB
+t1368171169
+s475
+i<iostream>
+i<opencv2/opencv.hpp>
+
+N/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniDraw.h
+c00000000519B1346000000000000054B
+t1369117510
+s1355
+i<opencv2/opencv.hpp>
+i<vector>
+
+N/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniPatchTools.h
+c00000000519067FC00000000000006B4
+t1368418300
+s1716
+i<opencv2/opencv.hpp>
+i"RosaniTools.h"
+
+N/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.h
+c0000000051AF48C20000000000000948
+t1370441922
+s2376
+i<opencv2/opencv.hpp>
+i<vector>
+i<sys/time.h>
+
+N/opt/local/include/i386/_structs.h
+c00000000515A0EA40000000000000FB5
+t1364856484
+s4021
+i<sys/appleapiopts.h>
+i<mach/i386/_structs.h>
+
+N/opt/local/include/i386/_types.h
+c00000000515A0EA40000000000001197
+t1364856484
+s4503
+
+N/opt/local/include/mach/i386/_structs.h
+c00000000515A0EA400000000000062D1
+t1364856484
+s25297
+
+N/opt/local/include/machine/_structs.h
+c00000000515A0E9C00000000000005AA
+t1364856476
+s1450
+i"i386/_structs.h"
+
+N/opt/local/include/machine/_types.h
+c00000000515A0E9C000000000000060B
+t1364856476
+s1547
+i"i386/_types.h"
+
+N/opt/local/include/opencv2/calib3d/calib3d.hpp
+c00000000515E92A400000000000092FD
+t1365152420
+s37629
+i"opencv2/core/core.hpp"
+i"opencv2/features2d/features2d.hpp"
+
+N/opt/local/include/opencv2/contrib/contrib.hpp
+c00000000515E92A40000000000009648
+t1365152420
+s38472
+i"opencv2/core/core.hpp"
+i"opencv2/imgproc/imgproc.hpp"
+i"opencv2/features2d/features2d.hpp"
+i"opencv2/objdetect/objdetect.hpp"
+i"opencv2/contrib/retina.hpp"
+i"opencv2/contrib/openfabmap.hpp"
+
+N/opt/local/include/opencv2/contrib/openfabmap.hpp
+c00000000515E92A40000000000003207
+t1365152420
+s12807
+i"opencv2/core/core.hpp"
+i"opencv2/features2d/features2d.hpp"
+i<vector>
+i<list>
+i<map>
+i<set>
+i<valarray>
+
+N/opt/local/include/opencv2/contrib/retina.hpp
+c00000000515E92A40000000000005D97
+t1365152420
+s23959
+i"opencv2/core/core.hpp"
+i<valarray>
+
+N/opt/local/include/opencv2/core/core.hpp
+c00000000515E92A4000000000002D379
+t1365152420
+s185209
+i"opencv2/core/types_c.h"
+i"opencv2/core/version.hpp"
+i<limits.h>
+i<algorithm>
+i<cmath>
+i<cstddef>
+i<complex>
+i<map>
+i<new>
+i<string>
+i<vector>
+i<sstream>
+i"opencv2/core/operations.hpp"
+i"opencv2/core/mat.hpp"
+
+N/opt/local/include/opencv2/core/core_c.h
+c00000000515E92A40000000000013298
+t1365152420
+s78488
+i"opencv2/core/types_c.h"
+
+N/opt/local/include/opencv2/core/mat.hpp
+c00000000515E92A40000000000013A5A
+t1365152420
+s80474
+i<limits.h>
+i<string.h>
+
+N/opt/local/include/opencv2/core/operations.hpp
+c00000000515E92A4000000000001F85F
+t1365152420
+s129119
+i<string.h>
+i<limits.h>
+i<ext/atomicity.h>
+i<bits/atomicity.h>
+i<limits>
+
+N/opt/local/include/opencv2/core/types_c.h
+c00000000515E92A4000000000000E041
+t1365152420
+s57409
+i<assert.h>
+i<stdlib.h>
+i<string.h>
+i<float.h>
+i<stdint.h>
+i<intrin.h>
+i<emmintrin.h>
+i<fastmath.h>
+i<math.h>
+i<ipl.h>
+i<ipl/ipl.h>
+i"tegra_round.hpp"
+i"emmintrin.h"
+
+N/opt/local/include/opencv2/core/version.hpp
+c00000000515E92A40000000000000B70
+t1365152420
+s2928
+
+N/opt/local/include/opencv2/features2d/features2d.hpp
+c00000000515E92A4000000000000F902
+t1365152420
+s63746
+i"opencv2/core/core.hpp"
+i"opencv2/flann/miniflann.hpp"
+i<limits>
+
+N/opt/local/include/opencv2/flann/config.h
+c00000000515E92A400000000000006FD
+t1365152420
+s1789
+
+N/opt/local/include/opencv2/flann/defines.h
+c00000000515E92A4000000000000124B
+t1365152420
+s4683
+i"config.h"
+
+N/opt/local/include/opencv2/flann/miniflann.hpp
+c00000000515E92A40000000000001785
+t1365152420
+s6021
+i"opencv2/core/core.hpp"
+i"opencv2/flann/defines.h"
+
+N/opt/local/include/opencv2/highgui/highgui.hpp
+c00000000515E92A400000000000023CA
+t1365152420
+s9162
+i"opencv2/core/core.hpp"
+i"opencv2/highgui/highgui_c.h"
+
+N/opt/local/include/opencv2/highgui/highgui_c.h
+c00000000515E92A400000000000065EE
+t1365152420
+s26094
+i"opencv2/core/core_c.h"
+
+N/opt/local/include/opencv2/imgproc/imgproc.hpp
+c00000000515E92A4000000000000DA60
+t1365152420
+s55904
+i"opencv2/core/core.hpp"
+i"opencv2/imgproc/types_c.h"
+
+N/opt/local/include/opencv2/imgproc/imgproc_c.h
+c00000000515E92A4000000000000767F
+t1365152420
+s30335
+i"opencv2/core/core_c.h"
+i"opencv2/imgproc/types_c.h"
+
+N/opt/local/include/opencv2/imgproc/types_c.h
+c00000000515E92A40000000000004038
+t1365152420
+s16440
+i"opencv2/core/core_c.h"
+
+N/opt/local/include/opencv2/ml/ml.hpp
+c00000000515E92A40000000000013252
+t1365152420
+s78418
+i"opencv2/core/core.hpp"
+i<limits.h>
+i<map>
+i<string>
+i<iostream>
+
+N/opt/local/include/opencv2/objdetect/objdetect.hpp
+c00000000515E92A400000000000091B7
+t1365152420
+s37303
+i"opencv2/core/core.hpp"
+i<map>
+i<deque>
+
+N/opt/local/include/opencv2/opencv.hpp
+c00000000515E92A40000000000000ABF
+t1365152420
+s2751
+i"opencv2/core/core_c.h"
+i"opencv2/core/core.hpp"
+i"opencv2/flann/miniflann.hpp"
+i"opencv2/imgproc/imgproc_c.h"
+i"opencv2/imgproc/imgproc.hpp"
+i"opencv2/photo/photo.hpp"
+i"opencv2/video/video.hpp"
+i"opencv2/features2d/features2d.hpp"
+i"opencv2/objdetect/objdetect.hpp"
+i"opencv2/calib3d/calib3d.hpp"
+i"opencv2/ml/ml.hpp"
+i"opencv2/highgui/highgui_c.h"
+i"opencv2/highgui/highgui.hpp"
+i"opencv2/contrib/contrib.hpp"
+
+N/opt/local/include/opencv2/photo/photo.hpp
+c00000000515E92A40000000000000F9D
+t1365152420
+s3997
+i"opencv2/core/core.hpp"
+i"opencv2/imgproc/imgproc.hpp"
+i"opencv2/photo/photo_c.h"
+
+N/opt/local/include/opencv2/photo/photo_c.h
+c00000000515E92A40000000000000A57
+t1365152420
+s2647
+i"opencv2/core/core_c.h"
+
+N/opt/local/include/opencv2/video/background_segm.hpp
+c00000000515E92A40000000000002A72
+t1365152420
+s10866
+i"opencv2/core/core.hpp"
+i<list>
+
+N/opt/local/include/opencv2/video/tracking.hpp
+c00000000515E92A400000000000047FF
+t1365152420
+s18431
+i"opencv2/core/core.hpp"
+i"opencv2/imgproc/imgproc.hpp"
+
+N/opt/local/include/opencv2/video/video.hpp
+c00000000515E92A40000000000000970
+t1365152420
+s2416
+i"opencv2/video/tracking.hpp"
+i"opencv2/video/background_segm.hpp"
+
+N/opt/local/include/sys/_posix_availability.h
+c00000000515A0E9F0000000000000B59
+t1364856479
+s2905
+
+N/opt/local/include/sys/_select.h
+c00000000515A0EA000000000000008F6
+t1364856480
+s2294
+
+N/opt/local/include/sys/_structs.h
+c00000000515A0EA00000000000001EE6
+t1364856480
+s7910
+i<sys/cdefs.h>
+i<sys/_types.h>
+i<machine/_structs.h>
+
+N/opt/local/include/sys/_symbol_aliasing.h
+c00000000515A0E9F000000000000193C
+t1364856479
+s6460
+
+N/opt/local/include/sys/_types.h
+c00000000515A0EA00000000000001845
+t1364856480
+s6213
+i<sys/cdefs.h>
+i<machine/_types.h>
+
+N/opt/local/include/sys/appleapiopts.h
+c00000000515A0E9F0000000000000816
+t1364856479
+s2070
+
+N/opt/local/include/sys/cdefs.h
+c00000000515A0E9F00000000000053BD
+t1364856479
+s21437
+i<sys/_symbol_aliasing.h>
+i<sys/_posix_availability.h>
+
+N/opt/local/include/sys/time.h
+c00000000515A0EA00000000000001E64
+t1364856480
+s7780
+i<sys/cdefs.h>
+i<sys/_types.h>
+i<Availability.h>
+i<sys/_structs.h>
+i<time.h>
+i<sys/_select.h>
+
+N/opt/local/lib/libopencv_calib3d.2.4.5.dylib
+c000000005167B7E600000000000A5E68
+t1365751782
+s679528
+
+N/opt/local/lib/libopencv_contrib.2.4.5.dylib
+c000000005167B7F700000000000F64F0
+t1365751799
+s1008880
+
+N/opt/local/lib/libopencv_core.2.4.5.dylib
+c000000005167B7B40000000000244D24
+t1365751732
+s2379044
+
+N/opt/local/lib/libopencv_features2d.2.4.5.dylib
+c000000005167B7DC00000000000BBDD0
+t1365751772
+s769488
+
+N/opt/local/lib/libopencv_flann.2.4.5.dylib
+c000000005167B7B9000000000007F2E4
+t1365751737
+s520932
+
+N/opt/local/lib/libopencv_gpu.2.4.5.dylib
+c000000005167B812000000000002B308
+t1365751826
+s176904
+
+N/opt/local/lib/libopencv_highgui.2.4.5.dylib
+c000000005167B7D10000000000053AAC
+t1365751761
+s342700
+
+N/opt/local/lib/libopencv_imgproc.2.4.5.dylib
+c000000005167B7C7000000000021DC9C
+t1365751751
+s2219164
+
+N/opt/local/lib/libopencv_legacy.2.4.5.dylib
+c000000005167B803000000000011573C
+t1365751811
+s1136444
+
+N/opt/local/lib/libopencv_ml.2.4.5.dylib
+c000000005167B7BE000000000007B8E0
+t1365751742
+s506080
+
+N/opt/local/lib/libopencv_nonfree.2.4.5.dylib
+c000000005167B81700000000000207D8
+t1365751831
+s133080
+
+N/opt/local/lib/libopencv_objdetect.2.4.5.dylib
+c000000005167B7D900000000000884DC
+t1365751769
+s558300
+
+N/opt/local/lib/libopencv_photo.2.4.5.dylib
+c000000005167B7C900000000000204CC
+t1365751753
+s132300
+
+N/opt/local/lib/libopencv_stitching.2.4.5.dylib
+c000000005167B81C000000000008C9C4
+t1365751836
+s575940
+
+N/opt/local/lib/libopencv_superres.2.4.5.dylib
+c000000005167B816000000000002E784
+t1365751830
+s190340
+
+N/opt/local/lib/libopencv_ts.2.4.5.dylib
+c000000005167B7E500000000000C2DE4
+t1365751781
+s798180
+
+N/opt/local/lib/libopencv_video.2.4.5.dylib
+c000000005167B7CD00000000000514C0
+t1365751757
+s332992
+
+N/opt/local/lib/libopencv_videostab.2.4.5.dylib
+c000000005167B8180000000000039530
+t1365751832
+s234800
+
+CBuild AST from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp
+r0
+
+CBuild AST from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp
+r0
+
+CBuild AST from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp
+r0
+
+CBuild AST from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp
+r0
+
+CBuild AST from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp
+r0
+
+CBuild AST from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp
+r0
+
+CBuild AST from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesab77ec92cd6eb741^2f4e0093cd6eb741^---0#1#0#--18"Check dependencies36"07C07DAE-0584-4CB0-A39D-797B6F8F2E2A-
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosMat.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s393137555.042869
+e393137555.360998
+r1
+xCompileC
+xBuild/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosMat.o
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+occ1plus: warning: -Wuninitialized is not supported without -O
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp1a1a0b93cd6eb741^ac6f5c93cd6eb741^-62"cc1plus: warning: -Wuninitialized is not supported without -O1(21%IDEActivityLogMessage2@43"-Wuninitialized is not supported without -O-393137555#0#62#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#20"LLVM GCC 4.2 Warning--0#0#0#-19%DVTDocumentLocation4@97"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp0000000000000000^2075"CompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosMat.o ../../Rosani.Lib/RosMat.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -mmacosx-version-min=10.8 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-generated-files.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-own-target-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-all-target-headers.hmap -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-project-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/include -I/opt/local/include -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources/x86_64 -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -c /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosMat.cpp -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosMat.o36"4F1098DB-C314-4B81-BC54-EF9EFAA5706B-
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDataStructure.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s393137556.226270
+e393137557.729168
+r1
+xCompileC
+xBuild/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDataStructure.o
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+occ1plus: warning: -Wuninitialized is not supported without -O
+oIn file included from /opt/local/include/opencv2/core/core_c.h:47,
+o                 from /opt/local/include/opencv2/opencv.hpp:46,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.h:13,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp:9:
+o/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':
+o/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp410e3a94cd6eb741^2eadba95cd6eb741^-628"cc1plus: warning: -Wuninitialized is not supported without -OIn file included from /opt/local/include/opencv2/core/core_c.h:47,                 from /opt/local/include/opencv2/opencv.hpp:46,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.h:13,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp:9:/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value2(21%IDEActivityLogMessage2@43"-Wuninitialized is not supported without -O-393137556#0#62#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#20"LLVM GCC 4.2 Warning--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#510#118#5(36%IDEActivityLogHeaderInclusionMessage4@116"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp-393137556#18446744073709551615#0#-0#-3@110"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp0000000000000000^8#18446744073709551615#8#18446744073709551615#18446744073709551615#0#---4@114"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.h-393137556#18446744073709551615#0#-0#-3@108"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.h0000000000000000^12#18446744073709551615#12#18446744073709551615#18446744073709551615#0#---4@59"In file included from /opt/local/include/opencv2/opencv.hpp-393137556#18446744073709551615#0#-0#-3@53"file://localhost/opt/local/include/opencv2/opencv.hpp0000000000000000^45#18446744073709551615#45#18446744073709551615#18446744073709551615#0#---4@62"In file included from /opt/local/include/opencv2/core/core_c.h-393137556#18446744073709551615#0#-0#-3@56"file://localhost/opt/local/include/opencv2/core/core_c.h0000000000000000^46#18446744073709551615#46#18446744073709551615#18446744073709551615#0#---2@106"Implicit conversion shortens 64-bit value into a 32-bit value in /opt/local/include/opencv2/core/types_c.h-393137556#18446744073709551615#0#-0#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#---1#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--0#0#0#-19%DVTDocumentLocation5@110"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp0000000000000000^2127"CompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDataStructure.o ../../Rosani.Lib/RosaniDataStructure.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -mmacosx-version-min=10.8 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-generated-files.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-own-target-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-all-target-headers.hmap -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-project-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/include -I/opt/local/include -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources/x86_64 -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -c /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDataStructure.cpp -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDataStructure.o36"8E003099-7C78-4E6C-8AA8-F02AA894BD83-
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDisplay.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s393137557.298242
+e393137558.275955
+r1
+xCompileC
+xBuild/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDisplay.o
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+occ1plus: warning: -Wuninitialized is not supported without -O
+oIn file included from /opt/local/include/opencv2/core/core_c.h:47,
+o                 from /opt/local/include/opencv2/opencv.hpp:46,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.h:13,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp:9:
+o/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':
+o/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp427c4c95cd6eb741^6ea64696cd6eb741^-616"cc1plus: warning: -Wuninitialized is not supported without -OIn file included from /opt/local/include/opencv2/core/core_c.h:47,                 from /opt/local/include/opencv2/opencv.hpp:46,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.h:13,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp:9:/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value2(21%IDEActivityLogMessage2@43"-Wuninitialized is not supported without -O-393137557#0#62#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#20"LLVM GCC 4.2 Warning--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137557#498#118#5(36%IDEActivityLogHeaderInclusionMessage4@110"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp-393137557#18446744073709551615#0#-0#-3@104"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp0000000000000000^8#18446744073709551615#8#18446744073709551615#18446744073709551615#0#---4@108"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.h-393137557#18446744073709551615#0#-0#-3@102"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.h0000000000000000^12#18446744073709551615#12#18446744073709551615#18446744073709551615#0#---4@59"In file included from /opt/local/include/opencv2/opencv.hpp-393137557#18446744073709551615#0#-0#-3@53"file://localhost/opt/local/include/opencv2/opencv.hpp0000000000000000^45#18446744073709551615#45#18446744073709551615#18446744073709551615#0#---4@62"In file included from /opt/local/include/opencv2/core/core_c.h-393137557#18446744073709551615#0#-0#-3@56"file://localhost/opt/local/include/opencv2/core/core_c.h0000000000000000^46#18446744073709551615#46#18446744073709551615#18446744073709551615#0#---2@106"Implicit conversion shortens 64-bit value into a 32-bit value in /opt/local/include/opencv2/core/types_c.h-393137557#18446744073709551615#0#-0#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#---1#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--0#0#0#-19%DVTDocumentLocation5@104"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp0000000000000000^2103"CompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDisplay.o ../../Rosani.Lib/RosaniDisplay.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -mmacosx-version-min=10.8 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-generated-files.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-own-target-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-all-target-headers.hmap -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-project-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/include -I/opt/local/include -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources/x86_64 -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -c /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDisplay.cpp -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDisplay.o36"A55295B6-F809-469E-B733-2F6D8FA7B04D-
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDraw.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s393137555.362404
+e393137557.429853
+r1
+xCompileC
+xBuild/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDraw.o
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+occ1plus: warning: -Wuninitialized is not supported without -O
+oIn file included from /opt/local/include/opencv2/core/core_c.h:47,
+o                 from /opt/local/include/opencv2/opencv.hpp:46,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.h:12,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp:10:
+o/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':
+o/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp68e75c93cd6eb741^a7216e95cd6eb741^-611"cc1plus: warning: -Wuninitialized is not supported without -OIn file included from /opt/local/include/opencv2/core/core_c.h:47,                 from /opt/local/include/opencv2/opencv.hpp:46,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.h:12,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp:10:/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value2(21%IDEActivityLogMessage2@43"-Wuninitialized is not supported without -O-393137555#0#62#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#20"LLVM GCC 4.2 Warning--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#493#118#5(36%IDEActivityLogHeaderInclusionMessage4@107"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp-393137556#18446744073709551615#0#-0#-3@101"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp0000000000000000^9#18446744073709551615#9#18446744073709551615#18446744073709551615#0#---4@105"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.h-393137556#18446744073709551615#0#-0#-3@99"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.h0000000000000000^11#18446744073709551615#11#18446744073709551615#18446744073709551615#0#---4@59"In file included from /opt/local/include/opencv2/opencv.hpp-393137556#18446744073709551615#0#-0#-3@53"file://localhost/opt/local/include/opencv2/opencv.hpp0000000000000000^45#18446744073709551615#45#18446744073709551615#18446744073709551615#0#---4@62"In file included from /opt/local/include/opencv2/core/core_c.h-393137556#18446744073709551615#0#-0#-3@56"file://localhost/opt/local/include/opencv2/core/core_c.h0000000000000000^46#18446744073709551615#46#18446744073709551615#18446744073709551615#0#---2@106"Implicit conversion shortens 64-bit value into a 32-bit value in /opt/local/include/opencv2/core/types_c.h-393137556#18446744073709551615#0#-0#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#---1#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--0#0#0#-19%DVTDocumentLocation5@101"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp0000000000000000^2091"CompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDraw.o ../../Rosani.Lib/RosaniDraw.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -mmacosx-version-min=10.8 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-generated-files.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-own-target-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-all-target-headers.hmap -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-project-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/include -I/opt/local/include -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources/x86_64 -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -c /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniDraw.cpp -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniDraw.o36"D9A045DA-0935-47EF-A99E-D6F7CEDDFCA0-
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniPatchTools.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s393137555.041419
+e393137557.296763
+r1
+xCompileC
+xBuild/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniPatchTools.o
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+occ1plus: warning: -Wuninitialized is not supported without -O
+oIn file included from /opt/local/include/opencv2/core/core_c.h:47,
+o                 from /opt/local/include/opencv2/opencv.hpp:46,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.h:12,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp:9:
+o/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':
+o/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp: In member function 'void patchTools::show(const cv::Mat&, const cv::Point&, double, const std::string&, int)':
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp:21: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp:21: warning: implicit conversion shortens 64-bit value into a 32-bit value
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cppdee50a93cd6eb741^16fb4b95cd6eb741^-1160"cc1plus: warning: -Wuninitialized is not supported without -OIn file included from /opt/local/include/opencv2/core/core_c.h:47,                 from /opt/local/include/opencv2/opencv.hpp:46,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.h:12,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp:9:/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp: In member function 'void patchTools::show(const cv::Mat&, const cv::Point&, double, const std::string&, int)':/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp:21: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp:21: warning: implicit conversion shortens 64-bit value into a 32-bit value4(21%IDEActivityLogMessage2@43"-Wuninitialized is not supported without -O-393137555#0#62#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#20"LLVM GCC 4.2 Warning--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137555#504#118#5(36%IDEActivityLogHeaderInclusionMessage4@113"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp-393137555#18446744073709551615#0#-0#-3@107"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp0000000000000000^8#18446744073709551615#8#18446744073709551615#18446744073709551615#0#---4@111"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.h-393137555#18446744073709551615#0#-0#-3@105"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.h0000000000000000^11#18446744073709551615#11#18446744073709551615#18446744073709551615#0#---4@59"In file included from /opt/local/include/opencv2/opencv.hpp-393137555#18446744073709551615#0#-0#-3@53"file://localhost/opt/local/include/opencv2/opencv.hpp0000000000000000^45#18446744073709551615#45#18446744073709551615#18446744073709551615#0#---4@62"In file included from /opt/local/include/opencv2/core/core_c.h-393137555#18446744073709551615#0#-0#-3@56"file://localhost/opt/local/include/opencv2/core/core_c.h0000000000000000^46#18446744073709551615#46#18446744073709551615#18446744073709551615#0#---2@106"Implicit conversion shortens 64-bit value into a 32-bit value in /opt/local/include/opencv2/core/types_c.h-393137555#18446744073709551615#0#-0#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#---1#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#826#167#-1#-3@76"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniPatchTools.cpp0000000000000000^20#18446744073709551615#20#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#993#167#-1#-3@76"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniPatchTools.cpp0000000000000000^20#18446744073709551615#20#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--0#0#0#-19%DVTDocumentLocation5@107"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp0000000000000000^2115"CompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniPatchTools.o ../../Rosani.Lib/RosaniPatchTools.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -mmacosx-version-min=10.8 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-generated-files.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-own-target-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-all-target-headers.hmap -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-project-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/include -I/opt/local/include -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources/x86_64 -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -c /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniPatchTools.cpp -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniPatchTools.o36"60DE440F-999B-4BB0-ABDE-38DFF8D26119-
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniTools.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s393137555.041300
+e393137557.452895
+r1
+xCompileC
+xBuild/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniTools.o
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+occ1plus: warning: -Wuninitialized is not supported without -O
+oIn file included from /opt/local/include/opencv2/core/core_c.h:47,
+o                 from /opt/local/include/opencv2/opencv.hpp:46,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.h:12,
+o                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:10:
+o/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':
+o/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp: In function 'void infLine(cv::Mat&, const cv::Point&, double)':
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:122: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:123: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp: In function 'void resizeMat(cv::Mat&, double)':
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:185: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:185: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp: In function 'std::vector<cv::Point_<int>, std::allocator<cv::Point_<int> > > getCirclePoints(const cv::Point&, int)':
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:421: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:425: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:432: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:439: warning: implicit conversion shortens 64-bit value into a 32-bit value
+o/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:446: warning: implicit conversion shortens 64-bit value into a 32-bit value
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cppbce90a93cd6eb741^4cfa7395cd6eb741^-2574"cc1plus: warning: -Wuninitialized is not supported without -OIn file included from /opt/local/include/opencv2/core/core_c.h:47,                 from /opt/local/include/opencv2/opencv.hpp:46,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.h:12,                 from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:10:/opt/local/include/opencv2/core/types_c.h: In function 'int cvIplDepth(int)':/opt/local/include/opencv2/core/types_c.h:799: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp: In function 'void infLine(cv::Mat&, const cv::Point&, double)':/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:122: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:123: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp: In function 'void resizeMat(cv::Mat&, double)':/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:185: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:185: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp: In function 'std::vector<cv::Point_<int>, std::allocator<cv::Point_<int> > > getCirclePoints(const cv::Point&, int)':/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:421: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:425: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:432: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:439: warning: implicit conversion shortens 64-bit value into a 32-bit value/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp:446: warning: implicit conversion shortens 64-bit value into a 32-bit value11(21%IDEActivityLogMessage2@43"-Wuninitialized is not supported without -O-393137555#0#62#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#20"LLVM GCC 4.2 Warning--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#495#118#5(36%IDEActivityLogHeaderInclusionMessage4@108"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp-393137556#18446744073709551615#0#-0#-3@102"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp0000000000000000^9#18446744073709551615#9#18446744073709551615#18446744073709551615#0#---4@106"In file included from /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.h-393137556#18446744073709551615#0#-0#-3@100"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.h0000000000000000^11#18446744073709551615#11#18446744073709551615#18446744073709551615#0#---4@59"In file included from /opt/local/include/opencv2/opencv.hpp-393137556#18446744073709551615#0#-0#-3@53"file://localhost/opt/local/include/opencv2/opencv.hpp0000000000000000^45#18446744073709551615#45#18446744073709551615#18446744073709551615#0#---4@62"In file included from /opt/local/include/opencv2/core/core_c.h-393137556#18446744073709551615#0#-0#-3@56"file://localhost/opt/local/include/opencv2/core/core_c.h0000000000000000^46#18446744073709551615#46#18446744073709551615#18446744073709551615#0#---2@106"Implicit conversion shortens 64-bit value into a 32-bit value in /opt/local/include/opencv2/core/types_c.h-393137556#18446744073709551615#0#-0#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#---1#-3@57"file://localhost/opt/local/include/opencv2/core/types_c.h0000000000000000^798#18446744073709551615#798#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#765#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^121#18446744073709551615#121#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#928#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^122#18446744073709551615#122#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#1227#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^184#18446744073709551615#184#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#1390#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^184#18446744073709551615#184#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#1759#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^420#18446744073709551615#420#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#1922#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^424#18446744073709551615#424#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#2085#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^431#18446744073709551615#431#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#2248#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^438#18446744073709551615#438#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--2@61"Implicit conversion shortens 64-bit value into a 32-bit value-393137556#2411#163#-1#-3@71"file://localhost/Users/xup6qup3/Dropbox/code/Rosani.Lib/RosaniTools.cpp0000000000000000^445#18446744073709551615#445#18446744073709551615#18446744073709551615#0#61"Implicit conversion shortens 64-bit value into a 32-bit value--0#0#0#-19%DVTDocumentLocation5@102"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp0000000000000000^2095"CompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniTools.o ../../Rosani.Lib/RosaniTools.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -mmacosx-version-min=10.8 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-generated-files.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-own-target-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-all-target-headers.hmap -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-project-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/include -I/opt/local/include -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources/x86_64 -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -c /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/../../Rosani.Lib/RosaniTools.cpp -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/RosaniTools.o36"1D777B70-F5BB-46ED-A7A3-15B063F99933-
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/main.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/main.o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42
+s393137555.041256
+e393137556.224901
+r1
+xCompileC
+xBuild/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/main.o
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvmgcc42
+occ1plus: warning: -Wuninitialized is not supported without -O
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp04e50a93cd6eb741^ef913994cd6eb741^-62"cc1plus: warning: -Wuninitialized is not supported without -O1(21%IDEActivityLogMessage2@43"-Wuninitialized is not supported without -O-393137555#0#62#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#20"LLVM GCC 4.2 Warning--0#0#0#-19%DVTDocumentLocation4@94"file://localhost/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp0000000000000000^2065"CompileC Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/main.o patternBlending/main.cpp normal x86_64 c++ com.apple.compilers.llvmgcc42    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -Wuninitialized -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -mmacosx-version-min=10.8 -gdwarf-2 -fvisibility-inlines-hidden -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-generated-files.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-own-target-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-all-target-headers.hmap -iquote /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/patternBlending-project-headers.hmap -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/include -I/opt/local/include -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources/x86_64 -I/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/DerivedSources -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -c /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/patternBlending/main.cpp -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/main.o36"67C9543F-3D7F-4DD9-ADD3-B26F5DC76577-
+
+CLd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/patternBlending normal x86_64
+s393137558.283148
+e393137559.308931
+r1
+xLd
+x/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/patternBlending
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Link /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/patternBlendingbcb14896cd6eb741^b1164f97cd6eb741^---0#0#0#--1237"Ld Build/Products/Debug/patternBlending normal x86_64    cd /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/usr/bin/llvm-g++-4.2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -L/opt/local/lib -F/Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug -filelist /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Intermediates/patternBlending.build/Debug/patternBlending.build/Objects-normal/x86_64/patternBlending.LinkFileList -mmacosx-version-min=10.8 -stdlib=libc++ -lopencv_calib3d.2.4.5 -lopencv_contrib.2.4.5 -lopencv_core.2.4.5 -lopencv_features2d.2.4.5 -lopencv_flann.2.4.5 -lopencv_gpu.2.4.5 -lopencv_highgui.2.4.5 -lopencv_imgproc.2.4.5 -lopencv_legacy.2.4.5 -lopencv_ml.2.4.5 -lopencv_nonfree.2.4.5 -lopencv_objdetect.2.4.5 -lopencv_photo.2.4.5 -lopencv_stitching.2.4.5 -lopencv_superres.2.4.5 -lopencv_ts.2.4.5 -lopencv_video.2.4.5 -lopencv_videostab.2.4.5 -o /Users/xup6qup3/Dropbox/code/Dev.temp/patternBlending/Build/Products/Debug/patternBlending36"1F0F72DC-9636-4BDE-9E0B-F39390961136-
+
