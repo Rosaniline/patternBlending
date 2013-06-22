@@ -49,6 +49,7 @@ Mat BidirectSimilarity::reconstruct (const Mat& src_one, const Mat& src_two, con
         cout<<"iteration = ";
         
         Mat temp_mask = (mask_pyr[scale] + slice_mask_pyr[scale])*0.5;
+        Mat div_mask = mask_pyr[scale] - slice_mask_pyr[scale];
         Mat temp_c, temp_cc;
         
         Point temp_centroid = Point(centroid.x*pow(0.5, PYRAMID_LEVEL - scale), centroid.y*pow(0.5, PYRAMID_LEVEL - scale));
@@ -62,9 +63,20 @@ Mat BidirectSimilarity::reconstruct (const Mat& src_one, const Mat& src_two, con
         
         for (int s = 0; s < MIN_ITERATION + (PYRAMID_LEVEL - scale)*INTER_DECREASE; s ++) {
             
+            Mat div = Mat::zeros(blend.size(), blend.type());
+            for (int i = 0; i < div.rows; i ++) {
+                for (int j = 0; j < div.cols; j ++) {
+                    
+                    if ( div_mask.at<double>(i, j) ) {
+                        div.at<double>(i, j) = 
+                    }
+                }
+            }
+            
             multiply(blend, temp_mask, blend);
             
-//            showMat(blend, "b", 1);
+
+
             
             warpAffine(blend, temp_c, rot_mat_c, temp_c.size(), INTER_CUBIC);
             multiply(temp_c, mask_pyr[scale], temp_c);

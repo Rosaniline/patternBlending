@@ -20,7 +20,7 @@ Mat sliceSynthesis::synthesis(const tattingPattern &tatting) {
     
     RNG rng = RNG(time(NULL));
     
-
+    
     
 //    #pragma omp parallel for
     for (int k = 0; k < 50; k ++) {
@@ -33,13 +33,18 @@ Mat sliceSynthesis::synthesis(const tattingPattern &tatting) {
 //        layer_sigma = 50;//rng.uniform(20, 60);
 //        slice_sigma = 50;//rng.uniform(20, 70);
         
-        resize_ratio = rng.uniform(0.5, 1.0);
-        rotate_angle = rng.uniform(-1, 1)*360/tatting.slice_num;
-        layer_ratio = rng.uniform(0.3, resize_ratio);
+        resize_ratio = rng.uniform(0.5, 1.5);
+        rotate_angle = rng.uniform(0, 2)*180/tatting.slice_num;
+        layer_ratio = rng.uniform(0.3, MIN(resize_ratio, 0.9));
         layer_sigma = rng.uniform(10, 30);
         slice_sigma = rng.uniform(20, 60);
 
         Mat similar = createSelfSimilar(tatting.pattern, tatting.centroid, resize_ratio, rotate_angle);
+        
+        
+        
+
+        
         
 //        Mat syn = hybrid(tatting, similar, layer_ratio, layer_sigma, slice_sigma);
         
@@ -197,18 +202,24 @@ Mat sliceSynthesis::createSelfSimilar(const cv::Mat &src, const Point &centroid,
     Mat resize_temp = similar.clone();
     resizeMat(resize_temp, scale);
     
+    
     Point centroid_dist = centroid - centroid*scale;
+
     
     similar.setTo(0);
     
     for (int i = 0; i < resize_temp.rows; i ++) {
         for (int j = 0; j < resize_temp.cols; j ++) {
             
-            similar.at<double>(i + centroid_dist.y, j + centroid_dist.x) = resize_temp.at<double>(i, j);
+            Point map = centroid_dist + Point(j, i);
+            if (boundaryTest(similar, map)) {
+                similar.at<double>(i + centroid_dist.y, j + centroid_dist.x) = resize_temp.at<double>(i, j);
+            }
+            
+            
             
         }
     }
-
     
     return similar;
 }
@@ -281,7 +292,7 @@ Mat sliceSynthesis::hybrid(const tattingPattern &src, const cv::Mat &similar, do
     
     Mat blended = alphaBlending(src.pattern, src.centroid, src.max_radius, similar, weight);
     
-    showMat(blended);
+//    showMat(blended);
   
     
     Mat mask = Mat::zeros(src.pattern.size(), src.pattern.type());
@@ -314,6 +325,9 @@ Mat sliceSynthesis::sliceHybrid(const tattingPattern &src, const cv::Mat &simila
     Mat weight = circularGaussianRG(layer_ratio, layer_sigma, src.centroid, src.pattern.size(), src.max_radius);
     
     Mat weight_p = sliceGaussianRG(src.slice_num, slice_sigma, src.centroid, src.pattern.size(), src.max_radius, src.sym_angle);
+    
+//    showMat(weight, "w", 1);
+//    showMat(weight_p, "w'", 1);
 
     for (int i = 0; i < weight.rows; i ++) {
         for (int j = 0; j < weight.cols; j ++) {
@@ -325,15 +339,15 @@ Mat sliceSynthesis::sliceHybrid(const tattingPattern &src, const cv::Mat &simila
         }
     }
     
-//    cout<<src.max_radius<<", "<<similar_max_radius<<endl;
+//    showMat(weight, "ww", 1);
+//    showMat(similar);
     
-//    showMat(weight);
     
 
     Mat blended = alphaBlending(src.pattern, src.centroid, src.max_radius, similar, weight);
     Mat blended_aug = blended.clone();
     
-//    showMat(blended);    
+//    showMat(blended);
     
     multiply(blended, src.slices_mask[4], blended);
     multiply(blended_aug, src.blend_mask[4], blended_aug);
@@ -347,7 +361,7 @@ Mat sliceSynthesis::sliceHybrid(const tattingPattern &src, const cv::Mat &simila
     Mat aug_roi = blended_aug.operator()(aug_range);
     
     
-//    showMat(blend_roi);
+    save_CV64FC1("/Users/xup6qup3/Desktop/blend.jpg", blend_roi);
     
     BidirectSimilarity bi_Sim = BidirectSimilarity();
     
