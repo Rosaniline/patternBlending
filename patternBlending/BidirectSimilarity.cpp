@@ -63,15 +63,15 @@ Mat BidirectSimilarity::reconstruct (const Mat& src_one, const Mat& src_two, con
         
         for (int s = 0; s < MIN_ITERATION + (PYRAMID_LEVEL - scale)*INTER_DECREASE; s ++) {
             
-            Mat div = Mat::zeros(blend.size(), blend.type());
-            for (int i = 0; i < div.rows; i ++) {
-                for (int j = 0; j < div.cols; j ++) {
-                    
-                    if ( div_mask.at<double>(i, j) ) {
-                        div.at<double>(i, j) = 
-                    }
-                }
-            }
+//            Mat div = Mat::zeros(blend.size(), blend.type());
+//            for (int i = 0; i < div.rows; i ++) {
+//                for (int j = 0; j < div.cols; j ++) {
+//                    
+//                    if ( div_mask.at<double>(i, j) ) {
+//                        div.at<double>(i, j) = 
+//                    }
+//                }
+//            }
             
             multiply(blend, temp_mask, blend);
             

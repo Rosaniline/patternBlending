@@ -38,6 +38,11 @@ int main(int argc, const char * argv[])
 
 
     tattingPattern pattern = tattingPattern(img);
+    
+    
+    
+    
+
 
     
     
@@ -65,8 +70,8 @@ int main(int argc, const char * argv[])
 //    save_CV64FC1("/Users/xup6qup3/Desktop/slice_src.jpg", temp);
     
 
-    sliceSynthesis synthesizer = sliceSynthesis();
-    synthesizer.synthesis(pattern);
+//    sliceSynthesis synthesizer = sliceSynthesis();
+//    synthesizer.synthesis(pattern);
     
     
     return 0;

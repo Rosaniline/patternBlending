@@ -21,53 +21,106 @@ symmetryDetection::~symmetryDetection() {
 double symmetryDetection::detectSymmetryAngle (const Mat& pattern, const Point& centroid) {
     
     
-    vector<int> angles;
     
-    for (int radius = CONCENTRIC_MIN_RADIUS; radius < getMinContainingRadius(pattern, centroid); radius += CONCENTRIC_SAMPLE_STEP) {
+    int min_degree = 0;
+    double min_error = INFINITY;
+    
+//    vector<double> errors;
+    
+    for (int rot_degree = 0; rot_degree < 180; rot_degree ++) {
         
-        vector<Point> circle_pts = getCirclePoints(centroid, radius);
-
-        
-        Mat circle_pt_mat = Mat((int)circle_pts.size(), 1, CV_64FC1);
-        Mat convolved_mat = Mat((int)circle_pts.size(), 1, CV_64FC1);
+        Mat rotated = Mat::zeros(pattern.size(), pattern.type());
+        Mat rot_mat = getRotationMatrix2D(centroid, -rot_degree, 1.0);
+        warpAffine(pattern, rotated, rot_mat, rotated.size(), CV_INTER_CUBIC);
         
         
-        for (int i = 0; i < circle_pts.size(); i ++) {
+        double local_error = 0.0;
+        for (int i = 1; i <= 5; i ++) {
             
-            circle_pt_mat.at<double>(i, 0) = pattern.at<double>(circle_pts[i]);
-            
-        }
-        
-        
-        for (int i = 0; i < circle_pts.size(); i ++) {
-            
-            convolved_mat.at<double>(i, 0) = convolveMat(circle_pt_mat);
-            shiftMatElement(circle_pt_mat);
-            
-        }
-        
-        double max = 0.0;
-        int idx = 0;
-        
-        for (int i = 0; i < convolved_mat.rows; i ++) {
-            
-            if ( max < convolved_mat.at<double>(i, 0) ) {
+            for (int j = 0; j < rotated.cols; j ++) {
                 
-                max = convolved_mat.at<double>(i, 0);
-                idx = i;
+                local_error += abs(rotated.at<double>(centroid.y + i, j) - rotated.at<double>(centroid.y - i, j))/i;
             }
+            
         }
         
-        int angle = ceil(135 - idx*(360.0 / convolved_mat.rows));
-        angle = angle > 0 ? angle : 360 + angle;
+        if ( local_error < min_error ) {
+            
+            min_error = local_error;
+            min_degree = rot_degree;
+        }
         
-        angles.push_back(angle);
-        
+//        errors.push_back(local_error);
         
     }
     
     
-    return mode(angles);
+//    double min = *min_element(errors.begin(), errors.end()), max = *max_element(errors.begin(), errors.end());
+//    
+//    Mat temp = Mat::zeros(100, 360, CV_64FC1);
+//    
+//
+//    for (int j = 0; j < 360; j ++) {
+//        cout<<errors[j]<<", ";
+//        for (int i = 0; i < 100; i ++) {
+//            
+//            temp.at<double>(i, j) = (errors[j] - min)/(max - min);
+//            
+//        }
+//    }
+//    
+//    showMat(temp);
+    
+    return min_degree;
+    
+    
+//    vector<int> angles;
+//    
+//    for (int radius = CONCENTRIC_MIN_RADIUS; radius < getMinContainingRadius(pattern, centroid); radius += CONCENTRIC_SAMPLE_STEP) {
+//        
+//        vector<Point> circle_pts = getCirclePoints(centroid, radius);
+//
+//        
+//        Mat circle_pt_mat = Mat((int)circle_pts.size(), 1, CV_64FC1);
+//        Mat convolved_mat = Mat((int)circle_pts.size(), 1, CV_64FC1);
+//        
+//        
+//        for (int i = 0; i < circle_pts.size(); i ++) {
+//            
+//            circle_pt_mat.at<double>(i, 0) = pattern.at<double>(circle_pts[i]);
+//            
+//        }
+//        
+//        
+//        for (int i = 0; i < circle_pts.size(); i ++) {
+//            
+//            convolved_mat.at<double>(i, 0) = convolveMat(circle_pt_mat);
+//            shiftMatElement(circle_pt_mat);
+//            
+//        }
+//        
+//        double max = 0.0;
+//        int idx = 0;
+//        
+//        for (int i = 0; i < convolved_mat.rows; i ++) {
+//            
+//            if ( max < convolved_mat.at<double>(i, 0) ) {
+//                
+//                max = convolved_mat.at<double>(i, 0);
+//                idx = i;
+//            }
+//        }
+//        
+//        int angle = ceil(135 - idx*(360.0 / convolved_mat.rows));
+//        angle = angle > 0 ? angle : 360 + angle;
+//        
+//        angles.push_back(angle);
+//        
+//        
+//    }
+//    
+//    
+//    return mode(angles);
 
     
 }

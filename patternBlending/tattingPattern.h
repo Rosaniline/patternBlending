@@ -29,11 +29,11 @@ public:
     Mat pattern;
     Point centroid;
     
-    int slice_num, max_radius;
-    
-    double sym_angle;
+    int slice_num, max_radius, sym_angle;
     
     vector<Mat> slices, slices_mask, slice_blend, blend_mask;
+    
+    vector<int> sym_lines;
     
 
 private:
@@ -50,6 +50,12 @@ private:
     
     // returns the max radius that contains whole object in the input image
     int getMaxContainingRadius ();
+    
+    vector<int> symLineExtract ();
+    
+    int symAngleFinder ();
+    
+    
     
     
 
