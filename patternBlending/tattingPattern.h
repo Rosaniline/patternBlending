@@ -26,7 +26,7 @@ public:
     tattingPattern (const Mat& img);
     ~tattingPattern ();
     
-    Mat pattern;
+    Mat pattern, slice, slice_mask;
     Point centroid;
     
     int slice_num, max_radius, sym_angle;
@@ -34,6 +34,7 @@ public:
     vector<Mat> slices, slices_mask, slice_blend, blend_mask;
     
     vector<int> sym_lines;
+
     
 
 private:
@@ -54,6 +55,8 @@ private:
     vector<int> symLineExtract ();
     
     int symAngleFinder ();
+    
+    void minSectorExtraction ();
     
     
     

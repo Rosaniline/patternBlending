@@ -55,8 +55,8 @@ private:
 
     const static int    PATCHWIDTH         = 7;
     const static int    PYRAMID_LEVEL      = 2;
-    const static int    MIN_ITERATION      = 20;
-    const static int    INTER_DECREASE     = 10;
+    const static int    MIN_ITERATION      = 10;
+    const static int    INTER_DECREASE     = 20;
     
 };
 

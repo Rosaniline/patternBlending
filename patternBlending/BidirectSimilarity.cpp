@@ -28,6 +28,15 @@ Mat BidirectSimilarity::reconstruct (const Mat& src_one, const Mat& src_two, con
     vector<Mat> weight_pyr = constructPyramid(weight, PYRAMID_LEVEL);
     
     
+//    vector<Mat> src_one_pyr, src_two_pyr, mask_pyr, slice_mask_pyr, weight_pyr;
+//    
+//    buildPyramid(src_one, src_one_pyr, PYRAMID_LEVEL);
+//    buildPyramid(src_two, src_two_pyr, PYRAMID_LEVEL);
+//    buildPyramid(mask, mask_pyr, PYRAMID_LEVEL);
+//    buildPyramid(slice_mask, slice_mask_pyr, PYRAMID_LEVEL);
+//    buildPyramid(weight, weight_pyr, PYRAMID_LEVEL);
+    
+    
     
     for (int scale = 0; scale <= PYRAMID_LEVEL; scale ++) {
         
@@ -50,63 +59,62 @@ Mat BidirectSimilarity::reconstruct (const Mat& src_one, const Mat& src_two, con
         
         Mat temp_mask = (mask_pyr[scale] + slice_mask_pyr[scale])*0.5;
         Mat div_mask = mask_pyr[scale] - slice_mask_pyr[scale];
-        Mat temp_c, temp_cc;
+//        Mat temp_c, temp_cc;
         
         Point temp_centroid = Point(centroid.x*pow(0.5, PYRAMID_LEVEL - scale), centroid.y*pow(0.5, PYRAMID_LEVEL - scale));
         
-        Mat rot_mat_c = getRotationMatrix2D(temp_centroid, 36 + 10, 1.0);
-        Mat rot_mat_cc = getRotationMatrix2D(temp_centroid, -36 - 10, 1.0);
+//        Mat rot_mat_c = getRotationMatrix2D(temp_centroid, 36 + 10, 1.0);
+//        Mat rot_mat_cc = getRotationMatrix2D(temp_centroid, -36 - 10, 1.0);
+        
+//        multiply(blend, temp_mask, blend);
+//
+//        Mat flipped = Mat::zeros(div_mask.size(), div_mask.type());
+//
+//        for (int i = 0; i < flipped.rows; i ++) {
+//            for (int j = 0; j < flipped.cols; j ++) {
+//
+//                if ( div_mask.at<double>(i, j) ) {
+//
+//                    flipped.at<double>(i, j) = blend.at<double>(temp_centroid.y + (temp_centroid.y - i), j);
+//                }
+//
+//            }
+//        }
+//
+//        blend = blend + flipped;
 
-        
-        
 
         
         for (int s = 0; s < MIN_ITERATION + (PYRAMID_LEVEL - scale)*INTER_DECREASE; s ++) {
             
-//            Mat div = Mat::zeros(blend.size(), blend.type());
-//            for (int i = 0; i < div.rows; i ++) {
-//                for (int j = 0; j < div.cols; j ++) {
-//                    
-//                    if ( div_mask.at<double>(i, j) ) {
-//                        div.at<double>(i, j) = 
-//                    }
-//                }
-//            }
-            
-            multiply(blend, temp_mask, blend);
             
 
-
+//            showMat(blend, "b2", 0);
+//            warpAffine(blend, temp_c, rot_mat_c, temp_c.size(), INTER_CUBIC);
+//            multiply(temp_c, mask_pyr[scale], temp_c);
             
-            warpAffine(blend, temp_c, rot_mat_c, temp_c.size(), INTER_CUBIC);
-            multiply(temp_c, mask_pyr[scale], temp_c);
+//            warpAffine(blend, temp_cc, rot_mat_cc, temp_cc.size(), INTER_CUBIC);
+//            multiply(temp_cc, mask_pyr[scale], temp_cc);
             
-//            showMat(temp_c, "c", 1);
+//            blend = blend + temp_c + temp_cc;
             
-            warpAffine(blend, temp_cc, rot_mat_cc, temp_cc.size(), INTER_CUBIC);
-            multiply(temp_cc, mask_pyr[scale], temp_cc);
-            
-//            showMat(temp_cc, "cc", 1);
-            
-            blend = blend + temp_c + temp_cc;
-            
-//            showMat(blend, "f", 0);
             
             
             Mat blend_one = blend.clone(), blend_two = blend.clone();
             
-            cout<<s<<", ";
             
-//            showMat(blend_one, "1", 1);
-//            showMat(blend_two, "2", 1);
+            double src_one_error = 0.0, src_two_error = 0.0;
             
             #pragma omp parallel
             {
-                gradualResize(src_one_pyr[scale], blend_one, mask_pyr[scale], reconst_src_one, reconst_blend_one, !s);
+                src_one_error = gradualResize(src_one_pyr[scale], blend_one, mask_pyr[scale], reconst_src_one, reconst_blend_one, !s);
 
-                gradualResize(src_two_pyr[scale], blend_two, mask_pyr[scale], reconst_src_two, reconst_blend_two, !s);
+                src_two_error =  gradualResize(src_two_pyr[scale], blend_two, mask_pyr[scale], reconst_src_two, reconst_blend_two, !s);
 
             }
+            
+            
+            cout<<s<<":"<<src_one_error + src_two_error<<", ";
             
 //            showMat(blend_one, "11", 1);
 //            showMat(blend_two, "22", 0);

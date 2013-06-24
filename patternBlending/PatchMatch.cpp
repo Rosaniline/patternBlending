@@ -481,7 +481,7 @@ inline double PatchMatch::binaryPatchNorm(const cv::Mat &src, const Point &src_l
                 
 //                if ( mask.at<double>(src_mapLoc) && mask.at<double>(dst_mapLoc) ) {
                 
-                    error += pow(src.at<double>(src_mapLoc) - dst.at<double>(dst_mapLoc), 2.0);
+                    error += abs(src.at<double>(src_mapLoc) - dst.at<double>(dst_mapLoc));
                     valid_count ++;
 //                }
             }

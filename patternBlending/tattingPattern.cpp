@@ -11,6 +11,8 @@
 tattingPattern::tattingPattern(const Mat& img) {
     
     preprocess(img);
+    slice = Mat::zeros(img.size(), CV_64FC1);
+    slice_mask = Mat::zeros(img.size(), CV_64FC1);
     
     
     
@@ -26,15 +28,22 @@ tattingPattern::tattingPattern(const Mat& img) {
 //    slice_num = sliceNum_detector.extractSliceNum(pattern, centroid);
 //    
 //    cout<<slice_num<<endl;
+    
+    Mat rot_mat = getRotationMatrix2D(centroid, -2, 1.0);
+    warpAffine(pattern, pattern, rot_mat, pattern.size(), INTER_CUBIC);
 
 //    sym_angle = 92;
+    sym_angle = 90;
+    
 //    symmetryDetection sym_detector = symmetryDetection();
 //    sym_angle = sym_detector.detectSymmetryAngle(pattern, centroid);
 //
-    sym_angle = symAngleFinder();
+//    sym_angle = symAngleFinder();
 //    cout<<sym_angle<<endl;
     
-    sym_lines = symLineExtract();
+//    sym_lines = symLineExtract();
+    
+//    minSectorExtraction();
 
     
     
@@ -468,7 +477,108 @@ int tattingPattern::symAngleFinder() {
 }
 
 
+void tattingPattern::minSectorExtraction() {
+    
+    Mat boudaries = Mat::zeros(360, pattern.cols - centroid.x, pattern.type());
+    
+    for (int degree = 0; degree < 360; degree ++) {
+        
+        Mat rot_mat = getRotationMatrix2D(centroid, -degree, 1.0), rotated;
+        warpAffine(pattern, rotated, rot_mat, pattern.size(), CV_INTER_CUBIC);
+        
+        for (int j = 0; j < boudaries.cols; j ++) {
+            
+            boudaries.at<double>(degree, j) = rotated.at<double>(centroid.y, centroid.x + j);
+        }
+    }
+    
+    int opt_angle = 0;
+    double min_error = INFINITY;
+    
+    for (int i = 0; i < boudaries.rows; i ++) {
+        
+        double local_error = 0.0;
+        int count = 0;
+        
+        for (int j = 0; j < boudaries.cols; j ++) {
+            
+            local_error += boudaries.at<double>(i, j) != boudaries.at<double>((i + 36)%boudaries.rows, j) ? 1 : 0;
+            
+            if ( boudaries.at<double>(i, j) != 0) {
+                count ++;
+            }
+        }
+        
+        local_error /= count;
+        
+        if ( local_error < min_error ) {
+            
+            min_error = local_error;
+            opt_angle = i;
+            
+        }
+    }
+    
+//    int ang_one = opt_angle, ang_two = (opt_angle + 360/slice_num);
+//
+//    cout<<ang_one<<", "<<ang_two<<endl;
+//    
+//    Mat mask = Mat::zeros(pattern.size(), CV_64FC1);
+//    
+//    for (int i = 0; i < mask.rows; i ++) {
+//        for (int j = 0; j < mask.cols; j ++) {
+//            
+//            int map_i = centroid.y - i, map_j = j - centroid.x;
+//            
+//            double r = sqrt(pow(map_i, 2.0) + pow(map_j, 2.0));
+//            
+//            int map_ang = (int)(atan2(map_i, map_j)*180.0/PI);
+//            
+//            map_ang = map_ang < 0 ? map_ang + 360 : map_ang;
+//            
+//            if ( ang_two > 360 && map_ang < 180 ) {
+//                map_ang += 360;
+//            }
+//            
+//            if ( map_ang <= ang_two && map_ang >= ang_one && r < max_radius ) {
+//                
+//                mask.at<double>(i, j) = 1.0;
+//            }
+//            
+//        }
+//    }
+    
 
+    for (int i = 0; i < slice_mask.rows; i ++) {
+        for (int j = 0; j < slice_mask.cols; j ++) {
+
+            int map_i = centroid.y - i, map_j = j - centroid.x;
+
+            double r = sqrt(pow(map_i, 2.0) + pow(map_j, 2.0));
+
+            int map_ang = (int)(atan2(map_i, map_j)*180.0/PI);
+
+            map_ang = map_ang < 0 ? map_ang + 360 : map_ang;
+
+            if ( map_ang <= (180 + 180/slice_num) && map_ang >= (180 - 180/slice_num) && r < max_radius ) {
+
+                slice_mask.at<double>(i, j) = 1.0;
+            }
+            
+        }
+    }
+
+    
+    Mat rot_mat = getRotationMatrix2D(centroid, 180 - (opt_angle + 180/slice_num), 1.0);
+    warpAffine(pattern, slice, rot_mat, pattern.size(), INTER_CUBIC);
+    
+    multiply(slice, slice_mask, slice);
+    
+    showMat(slice);
+    
+
+    
+}
 
 
 
